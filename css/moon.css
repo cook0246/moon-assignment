@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/***********************************
+		REFERENCES
+font-sizes
+h1  6.854rem
+h2  4.236rem
+h3  2.618rem
+1.618rem
+1rem
+0.618rem
+
+font-families
+Droid Serif, Droid Sans
+
+colors
+#000000
+#222222
+#333333
+#D4D4D4
+#CC3300
+#BADA55
+header #FFFFFF
+plus the shadow for the text
+
+
+***********************************/
+
+*{
+	padding:0;
+	margin:0;
+}
+
+/***********************************
+		DEFAULTS
+***********************************/
+body{
+	background-color: #222;
+    /*text-shadow:0 0 1.5rem #D4D4D4;*/
+    
+}
+h1, h2, h3, h4{
+	font-family:'Droid Serif', serif;  /* you need a font stack here */
+    text-shadow:0.3rem 0.2rem 0.4rem #606060;
+}
+h1{
+    
+}
+h2{
+	
+}
+h3{
+	
+}
+h4{
+	
+}
+p, li, a{
+	font-family: 'Droid Sans', sans-serif; /* you need a font stack here */
+    /*text-shadow:0rem 0.1rem 0.5rem #909090;*/
+}
+
+ul{
+    
+	list-style-type:none;
+    -webkit-column-count: 2;
+    
+    padding: 1rem 0 0.5rem 5rem;
+    text-align: left;
+    
+}
+a:link, a:visited{
+	transition: all 0.8s linear;
+}
+a:hover, a:active, a:focus{
+	text-decoration: none;
+}
+
+/***********************************
+		LAYOUT
+***********************************/
+.wrapper{
+	width:100%;
+	max-width: 1020px;
+	min-width: 400px;
+	margin:0 auto 2.0rem;
+	background-color: #d4d4d4;
+}
+.header{
+    background:  url(../img/moon-header.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+	background-color: #000;
+    min-height: 400px;
+    max-height: 400px;
+    max-width: 100%;
+    
+    font-size: 4rem;
+    line-height:8rem;
+    padding: 2rem 3rem;
+    color:#FFFFFF;
+}
+img{
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+
+.main{
+	padding: 1rem 4.7%;
+}
+.footer{
+    background-color:#333333;
+    
+}
+
+/***********************************
+		LINKS 
+-for any that are different than the default
+***********************************/
+
+.footer a:link,
+.footer a:visited{
+	/*display: block;*/
+    color:#CC3300;
+    
+	
+}
+.footer a:hover,
+.footer a:active,
+.footer a:focus{
+    color:#BADA55;
+	
+}
+
+
+/***********************************
+		CONTENT
+***********************************/
+.header h1{
+    margin-right: 50%;
+    text-align: right;
+}
+.main h2{   /* New Moon Rising */
+	font-size: 4.236rem;
+    color: #CC3300;
+    line-height: 4.5rem;
+    margin-bottom: -1rem;
+}
+.main h3{   /* Blue Moon */
+    font-size: 2.618rem;
+    color: #CC3300;
+    margin-bottom: -1rem;
+}
+.main p{
+    margin:2rem auto;
+    line-height: 1.5rem;
+    
+}
+.main img{
+	/* use border-radius to crop image */
+	/* choose a width percentage for the image too */
+}
+
+.left{
+	float:left;
+	margin-right:10px;
+	margin-bottom: 10px;
+    width:25%;
+    min-width:150px;
+    border-radius: 40%;
+}
+.footer p{
+    color: #000000;
+    text-align: left;
+    padding: 0 0 2rem 3.8rem;
+    
+}
+.footer li{
+    /* make these 50% the width of the footer */
+    width:50%;
+    padding:0.5rem;
+}
